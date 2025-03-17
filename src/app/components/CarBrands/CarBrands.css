@@ -1,0 +1,81 @@
+/* Global Styles */
+.carBrandsSection {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CarBrands Styles */
+.car-brands-section {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+}
+.car-heading {
+  text-align: center;
+  margin: 30px;
+}
+
+.car-heading h4 {
+  text-transform: uppercase;
+  color: grey;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+.logo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+
+.logo-wrapper {
+  width: 120px;
+  height: auto;
+  opacity: 0;
+}
+
+.car-heading h3 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.car-heading h3 span {
+  background: linear-gradient(to right, #ff8971, #fa2a00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .car-brands-section {
+    width: 100%;
+    padding: 40px 10px;
+  }
+  .car-heading {
+    margin-top: 20px;
+  }
+  .car-heading h4 {
+    font-size: 0.8rem;
+  }
+  .car-heading h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+  .logo-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  .logo-wrapper {
+    width: 80px;
+    margin: 10px 0;
+  }
+  .logo-container .bmw-logo {
+    width: 40px;
+  }
+}
+
+.partner {
+  font-size: 30px;
+}

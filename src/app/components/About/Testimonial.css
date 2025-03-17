@@ -1,0 +1,195 @@
+/* testimonial.css */
+.testimonial-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  width: 100%;
+}
+
+.testimonial-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.testimonial-text {
+  color: #1a1a1a;
+  padding-left: 10px;
+}
+
+.testimonial-heading {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.testimonial-profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.profile-image {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.profile-role {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.testimonial-quote {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: #333;
+}
+
+.testimonial-right {
+  width: 50%;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+  .testimonial-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .testimonial-left,
+  .testimonial-right {
+    width: 100%;
+  }
+
+  .testimonial-heading {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .testimonial-text {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .testimonial-profile {
+    justify-content: center;
+  }
+
+  .testimonial-quote {
+    font-size: 1rem;
+    text-align: center;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .testimonial-container {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text for better alignment */
+    gap: 20px; /* Reduce gap for better spacing */
+  }
+
+  .testimonial-left {
+    width: 100%; /* Take full width on smaller screens */
+    order: 1; /* Ensure text appears on top */
+  }
+
+  .testimonial-right {
+    width: 100%; /* Take full width on smaller screens */
+    order: 2; /* Ensure carousel appears below */
+  }
+
+  .testimonial-profile {
+    justify-content: center; /* Center profile on smaller screens */
+  }
+
+  .profile-image {
+    width: 48px;
+    height: 48px;
+  }
+
+  .testimonial-heading {
+    font-size: 2rem; /* Adjust font size for mobile */
+  }
+
+  .testimonial-quote {
+    font-size: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+}
+.carousel-container {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.carousel-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.video-element {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  max-height: 500px;
+}
+
+.header-text {
+  text-align: center;
+}
+
+.header-text h3 {
+  font-size: 2rem;
+}
+
+.header-text h3 span {
+  background: linear-gradient(to right, #ff8971, #fa2a00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

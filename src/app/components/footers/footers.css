@@ -1,0 +1,36 @@
+.site-logo {
+  margin-top: 40px;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .site-logo {
+    margin-top: -20px;
+  }
+}
+
+.sender {
+  max-width: 100px;
+  border: 1px solid #ffa500;
+  padding: 8px 20px;
+  margin: 20px auto 0; /* Centering horizontally */
+  border-radius: 30px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #ff7f50;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  cursor: pointer;
+}
+
+.sender:hover {
+  background: #ffa500;
+  color: white;
+}
+
+.para {
+  margin-top: 40px;
+}
