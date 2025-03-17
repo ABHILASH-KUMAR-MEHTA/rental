@@ -7,13 +7,6 @@ import { useEffect, useState } from 'react';
 function HomeVersionThree() {
   const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    fetch('/api/products') // Fetch data from API route
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .catch((err) => console.error('Error fetching products:', err));
-  }, []);
-
   return (
     <LayoutTwo topbar={true}>
       {/* PRODUCT SLIDER AREA */}

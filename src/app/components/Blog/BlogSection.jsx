@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/bundle';
+import Image from 'next/image';
 import './BlogSection.css';
 import { useState } from 'react';
 
@@ -72,11 +73,14 @@ const BlogCard = ({ post }) => {
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <img
+      <Image
         src={imageToShow}
         alt={post.title}
         className='blog-image'
         loading='lazy'
+        width={300} // Set appropriate width
+        height={200} // Set appropriate height
+        style={{ objectFit: 'cover' }}
       />
       <div className='blog-overlay'>
         <div className='title-container'>

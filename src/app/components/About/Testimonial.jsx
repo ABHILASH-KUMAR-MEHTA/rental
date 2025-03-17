@@ -2,7 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './testimonial.css'; // Import CSS file
+import Image from 'next/image';
+import './Testimonial.css'; // Import CSS file
 
 function Testimonial() {
   const carouselVideos = ['/img/reviews.mp4', '/img/review.mp4'];
@@ -30,11 +31,14 @@ function Testimonial() {
               What people are saying <span>About Us...</span>
             </h3>
             <div className='testimonial-profile'>
-              <img
+              <Image
                 loading='lazy'
                 src='/img/test6.jpg'
                 alt='Josh Smith'
                 className='profile-image'
+                width={300} // Set appropriate width
+                height={200} // Set appropriate height
+                style={{ objectFit: 'cover' }}
               />
               <div className='profile-details'>
                 <div className='profile-name'>Hritik Kushwah</div>

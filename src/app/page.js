@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { Navbar } from './components/NavBar/NavBar';
 import { HeroSection } from './components/HeroSection/HeroSection';
 import { Working } from './components/Working/Working';
@@ -10,7 +9,6 @@ import Testimonial from './components/About/Testimonial';
 import HomeVersionThree from './pages';
 import './assets/sass/style.scss';
 import './assets/responsive.css';
-import One from './assets/test1.jpg';
 import Footers from './components/footers/Footers';
 import { CarBrands } from './components/CarBrands/CarBrands';
 
@@ -25,8 +23,6 @@ export default function Home() {
       <CarBrands />
       <Download />
       <BlogSection
-        // sectionTitle='Caring is the new marketing'
-        // sectionSubtitle="The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​"
         blogPosts={[
           {
             imageSrc: ['/img/test1.jpg', '/img/test4.jpg'],
