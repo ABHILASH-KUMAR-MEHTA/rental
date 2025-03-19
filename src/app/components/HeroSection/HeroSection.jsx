@@ -7,12 +7,10 @@ import CarImage from '../../assets/HeroCar.png';
 import WhatsAppImage from '../../assets/whatsapp.png';
 
 export const HeroSection = () => {
-  // Refs for the text section and the image container
   const textRef = useRef(null);
   const imageRef = useRef(null);
 
   useEffect(() => {
-    // GSAP animations
     gsap.fromTo(
       textRef.current,
       { scale: 0.8 },
@@ -28,6 +26,16 @@ export const HeroSection = () => {
 
   return (
     <main>
+      <section className='hero-image-container'>
+        <div className='orange-box'></div>
+        <Image
+          ref={imageRef}
+          src={CarImage}
+          alt='Car'
+          className='car-image'
+        />
+      </section>
+
       <section
         className='text-section'
         ref={textRef}
@@ -45,17 +53,12 @@ export const HeroSection = () => {
           <a
             href='#cars'
             className='btn btn-gradient'
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '10px',
-              fontSize: '15px',
-            }}
           >
             <Image
               src={appleImage}
-              alt='WhatsApp'
-              style={{ width: '60px', height: '30px' }}
+              alt='Apple Store'
+              width={60}
+              height={30}
             />
             See Our Cars
           </a>
@@ -63,31 +66,16 @@ export const HeroSection = () => {
           <a
             href='https://wa.me/+919410888861?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20booking%20a%20car.'
             className='btn btn-gradient'
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '10px',
-              fontSize: '15px',
-            }}
           >
             <Image
               src={WhatsAppImage}
               alt='WhatsApp'
-              style={{ width: '30px', height: '30px' }}
+              width={30}
+              height={30}
             />
             Book Now
           </a>
         </div>
-      </section>
-
-      <section className='hero-image-container'>
-        <div className='orange-box'></div>
-        <Image
-          ref={imageRef}
-          src={CarImage}
-          alt='Car'
-          className='car-image'
-        />
       </section>
     </main>
   );

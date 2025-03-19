@@ -12,6 +12,8 @@ import car4 from '../../assets/car13.jpg';
 import car5 from '../../assets/car14.jpg';
 import car6 from '../../assets/car15.jpg';
 import car7 from '../../assets/car16.jpg';
+import car8 from '../../assets/car18.jpeg';
+import car9 from '../../assets/car17.jpg';
 import { Modal } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -38,7 +40,7 @@ const properties = [
     feature: [
       'No hidden charges, transparent pricing',
       'Luxury & economy options available',
-      'Fully air-conditioned & GPS-enabled',
+      'Fully air-conditioned',
       'Discounts on long-term rentals',
     ],
     length: '₹ 4000',
@@ -68,7 +70,7 @@ const properties = [
     feature: [
       'No hidden charges, transparent pricing',
       'Luxury & economy options available',
-      'Fully air-conditioned & GPS-enabled',
+      'Fully air-conditioned',
       'Discounts on long-term rentals',
     ],
     length: '₹ 3500',
@@ -98,7 +100,7 @@ const properties = [
     feature: [
       'No hidden charges, transparent pricing',
       'Luxury & economy options available',
-      'Fully air-conditioned & GPS-enabled',
+      'Fully air-conditioned',
       'Discounts on long-term rentals',
     ],
     length: '₹ 3000',
@@ -128,7 +130,7 @@ const properties = [
     feature: [
       'No hidden charges, transparent pricing',
       'Luxury & economy options available',
-      'Fully air-conditioned & GPS-enabled',
+      'Fully air-conditioned',
       'Discounts on long-term rentals',
     ],
     length: '₹ 3000',
@@ -157,7 +159,7 @@ const properties = [
     feature: [
       'No hidden charges, transparent pricing',
       'Luxury & economy options available',
-      'Fully air-conditioned & GPS-enabled',
+      'Fully air-conditioned',
       'Discounts on long-term rentals',
     ],
     length: '₹ 3000',
@@ -187,7 +189,7 @@ const properties = [
     feature: [
       'No hidden charges, transparent pricing',
       'Luxury & economy options available',
-      'Fully air-conditioned & GPS-enabled',
+      'Fully air-conditioned',
       'Discounts on long-term rentals',
     ],
     length: '₹ 3000',
@@ -217,13 +219,72 @@ const properties = [
     feature: [
       'No hidden charges, transparent pricing',
       'Luxury & economy options available',
-      'Fully air-conditioned & GPS-enabled',
+      'Fully air-conditioned',
       'Discounts on long-term rentals',
     ],
     length: '₹ 3000',
     length2: '',
     fullDayPrice: '₹ 17',
     hourlyPrice: '₹ 9',
+    alternativePrice: 599.0,
+    currency: '₹',
+    guests: '4+1 Seater',
+    count: 16,
+    objectPosition: 'bottom',
+  },
+  {
+    id: 8,
+    title: 'Toyota Glanza',
+    address: '4+1 Seater, Agra',
+    image: car8,
+    features: [{ label: 'Our Promise', icon: featureIcon_1 }],
+    images: [
+      { src: '/img/car8/car01.jpeg' },
+      { src: '/img/car8/car02.jpeg' },
+      { src: '/img/car8/car03.jpeg' },
+      { src: '/img/car8/car04.jpeg' },
+      { src: '/img/car8/car05.jpeg' },
+    ],
+    feature: [
+      'No hidden charges, transparent pricing',
+      'Luxury & economy options available',
+      'Fully air-conditioned',
+      'Discounts on long-term rentals',
+    ],
+    length: '₹ 3000',
+    length2: '',
+    fullDayPrice: '₹ 17',
+    hourlyPrice: '₹ 10',
+    alternativePrice: 599.0,
+    currency: '₹',
+    guests: '4+1 Seater',
+    count: 16,
+    objectPosition: 'bottom',
+  },
+  {
+    id: 9,
+    title: 'Toyota Platinum Etios',
+    address: '4+1 Seater, Agra',
+    image: car9,
+    features: [{ label: 'Our Promise', icon: featureIcon_1 }],
+    images: [
+      { src: '/img/car9/car01.jpg' },
+      { src: '/img/car9/car02.jpeg' },
+      { src: '/img/car9/car03.jpeg' },
+      { src: '/img/car9/car04.jpeg' },
+      { src: '/img/car9/car05.jpeg' },
+      { src: '/img/car9/car06.jpeg' },
+    ],
+    feature: [
+      'No hidden charges, transparent pricing',
+      'Luxury & economy options available',
+      'Fully air-conditioned',
+      'Discounts on long-term rentals',
+    ],
+    length: '₹ 3000',
+    length2: '',
+    fullDayPrice: '₹ 17',
+    hourlyPrice: '₹ 10',
     alternativePrice: 599.0,
     currency: '₹',
     guests: '4+1 Seater',

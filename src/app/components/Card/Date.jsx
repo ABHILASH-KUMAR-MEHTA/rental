@@ -7,7 +7,7 @@ import { format } from 'date-fns';
 const Dater = () => {
   const [selectedDate, setSelectedDate] = useState(null);
   const [time, setTime] = useState('12:00 PM');
-  const [seatCount, setSeatCount] = useState('1');
+  const [seatCount, setSeatCount] = useState('4+1');
   const [giftCode, setGiftCode] = useState('');
   const [fromAddress, setFromAddress] = useState('');
   const [toAddress, setToAddress] = useState('');
@@ -26,7 +26,10 @@ const Dater = () => {
 
   return (
     <Container className='container mb-48 sm:mt-24'>
-      <div className='heading '>
+      <div
+        className='heading '
+        id='form'
+      >
         <h4>Provide Your Details!</h4>
         <h3>
           Enter your preferred pickup date, time, and location for
@@ -78,12 +81,12 @@ const Dater = () => {
             value={seatCount}
             onChange={(e) => setSeatCount(e.target.value)}
           >
-            {[...Array(10).keys()].map((n) => (
+            {['4+1', '6+1', '7+1'].map((seat, index) => (
               <option
-                key={n + 1}
-                value={n + 1}
+                key={index}
+                value={seat}
               >
-                {n + 1}
+                {seat}
               </option>
             ))}
           </select>

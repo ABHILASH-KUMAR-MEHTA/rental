@@ -72,9 +72,11 @@ export const Working = () => {
           className='step step1'
           ref={(el) => (stepRefs.current[0] = el)}
         >
-          <div className='icon'>
-            <i className='ri-map-pin-fill'></i>
-          </div>
+          <a href='#form'>
+            <div className='icon'>
+              <i className='ri-map-pin-fill'></i>
+            </div>
+          </a>
           <div className='step-text'>
             <h5>Choose a Location</h5>
             <p>Easily select the perfect location for your car rental.</p>
@@ -90,9 +92,11 @@ export const Working = () => {
           className='step step2'
           ref={(el) => (stepRefs.current[1] = el)}
         >
-          <div className='icon'>
-            <i className='ri-calendar-schedule-fill'></i>
-          </div>
+          <a href='#form'>
+            <div className='icon'>
+              <i className='ri-calendar-schedule-fill'></i>
+            </div>
+          </a>
           <div className='step-text'>
             <h5>Pick-Up Date</h5>
             <p>Pick a convenient date to start your journey.</p>
@@ -108,9 +112,11 @@ export const Working = () => {
           className='step step3'
           ref={(el) => (stepRefs.current[2] = el)}
         >
-          <div className='icon'>
-            <i className='ri-bookmark-3-fill'></i>
-          </div>
+          <a href='#form'>
+            <div className='icon'>
+              <i className='ri-bookmark-3-fill'></i>
+            </div>
+          </a>
           <div className='step-text'>
             <h5>Book your Car</h5>
             <p>Reserve your ideal car in just a few clicks.</p>

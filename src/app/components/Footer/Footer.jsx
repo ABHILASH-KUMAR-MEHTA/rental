@@ -10,8 +10,9 @@ export const Footer = () => {
         <div className='footer-column'>
           <h4>Company</h4>
           <ul>
-            <li>About Us</li>
-            <li>Careers</li>
+            <li>
+              <a href='#about'>About Us</a>
+            </li>
             <li>Privacy Policy</li>
             <li>Terms & Conditions</li>
           </ul>
@@ -20,10 +21,15 @@ export const Footer = () => {
         <div className='footer-column'>
           <h4>Quick Links</h4>
           <ul>
-            <li>Rent a Car</li>
-            <li>Services</li>
-            <li>Contact</li>
-            <li>Our Blogs</li>
+            <li>
+              <a href='#cars'>Rent a Car</a>
+            </li>
+            <li>
+              <a href='#services'>Services</a>
+            </li>
+            <li>
+              <a href='#contact'>Contact</a>
+            </li>
           </ul>
         </div>
 
@@ -33,7 +39,6 @@ export const Footer = () => {
             <li>FAQs</li>
             <li>Help Center</li>
             <li>Booking Guide</li>
-            <li>Account Settings</li>
           </ul>
         </div>
 
@@ -72,21 +77,13 @@ export const Footer = () => {
               className='inline-block'
             />
           </Link>
-          <span> Nexeor</span>
+          <span>Mehta.Tech</span>
         </div>
         <ul className='list-unstyled d-flex'>
           <li className='ms-3'>
             <a
               className='link-body-emphasis'
-              href='#'
-            >
-              <FaTwitter size={24} />
-            </a>
-          </li>
-          <li className='ms-3'>
-            <a
-              className='link-body-emphasis'
-              href='#'
+              href='https://www.instagram.com/gangaram_travels_agra?igsh=cHMzamp0Z3drbWhi'
             >
               <FaInstagram size={24} />
             </a>

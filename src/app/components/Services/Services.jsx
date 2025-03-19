@@ -39,21 +39,21 @@ export const Services = () => {
             <div className='sicon'>
               <i class='ri-money-rupee-circle-fill'></i>
             </div>
-            <h4>Competitive Pricing</h4>
+            <h4>Affordable And Transparent Pricing</h4>
           </div>
 
           <div className='feature-item'>
             <div className='sicon'>
               <i class='ri-wallet-3-fill'></i>
             </div>
-            <h4>Easier Rent On Your Budget</h4>
+            <h4>One Way Cabs</h4>
           </div>
 
           <div className='feature-item'>
             <div className='sicon'>
               <i class='ri-bank-card-fill'></i>
             </div>
-            <h4>On-Time Guarantee</h4>
+            <h4>Outstation Car Rental</h4>
           </div>
         </div>
 
@@ -69,21 +69,21 @@ export const Services = () => {
             <div className='sicon'>
               <i class='ri-medal-fill'></i>
             </div>
-            <h4>Wide Selection of Vehicles</h4>
+            <h4>Reliable And On-Time Service</h4>
           </div>
 
           <div className='feature-item'>
             <div className='sicon'>
               <i class='ri-user-star-fill'></i>
             </div>
-            <h4>Clean and Sanitized Cars</h4>
+            <h4>Local Rental</h4>
           </div>
 
           <div className='feature-item'>
             <div className='sicon'>
               <i class='ri-taxi-wifi-fill'></i>
             </div>
-            <h4>Book in one Click</h4>
+            <h4>⁠Clean And Well Maintained Drivers</h4>
           </div>
         </div>
       </div>
