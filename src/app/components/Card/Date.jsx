@@ -42,7 +42,7 @@ const Dater = () => {
           md={4}
           className='form-group'
         >
-          <label>Select Date</label>
+          <label>Select Date :</label>
           <div className='input-group date-input-container'>
             <DatePicker
               selected={selectedDate}
@@ -61,7 +61,7 @@ const Dater = () => {
           md={4}
           className='form-group'
         >
-          <label>Time</label>
+          <label>Time :</label>
           <input
             type='time'
             value={time}
@@ -73,9 +73,9 @@ const Dater = () => {
         {/* Seat Dropdown */}
         <Col
           md={4}
-          className='form-group'
+          className='form-group pad'
         >
-          <label>Number of Seats</label>
+          <label>Number of Seats :</label>
           <select
             className='form-control rounded-pill shadow-sm'
             value={seatCount}
@@ -93,13 +93,13 @@ const Dater = () => {
         </Col>
       </Row>
 
-      <Row>
+      <Row className=''>
         {/* From Address */}
         <Col
           md={6}
-          className='form-group'
+          className='form-group sm:mt-24 lg:mt-28 '
         >
-          <label>From Address</label>
+          <label>PickUp Location :</label>
           <input
             type='text'
             className='form-control rounded-pill shadow-sm'
@@ -113,7 +113,7 @@ const Dater = () => {
           md={6}
           className='form-group'
         >
-          <label>To Address</label>
+          <label>Drop Location :</label>
           <input
             type='text'
             className='form-control rounded-pill shadow-sm'
@@ -130,7 +130,7 @@ const Dater = () => {
           md={6}
           className='form-group'
         >
-          <label>Gift Code</label>
+          <label>Gift Code :</label>
           <input
             type='text'
             className='form-control rounded-pill shadow-sm'
@@ -145,9 +145,9 @@ const Dater = () => {
           md={6}
           className='form-group'
         >
-          <label>Return Booking</label>
+          <label>Return Booking :</label>
           <select
-            className='form-control rounded-pill shadow-sm'
+            className='form-control rounded-pill shadow-sm p-24'
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
           >
@@ -191,11 +191,7 @@ const Dater = () => {
           padding: 20px;
           border-radius: 15px;
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-          border: 1px solid #ddd;
-        }
-
-        .form-group {
-          margin-bottom: 15px;
+          border: 1px solid #ccc;
         }
 
         .form-control {
@@ -203,12 +199,19 @@ const Dater = () => {
           padding: 10px;
           border-radius: 50px;
           border: 1px solid #ddd;
-          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-          position: relative;
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
+          transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .filled-input:not(:placeholder-shown) {
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-group {
+          margin-bottom: 15px;
         }
 
         .date-input-container {
-          position: relative;
           width: 100%;
         }
 
@@ -248,6 +251,27 @@ const Dater = () => {
             margin-bottom: 20px;
             margin-top: 40px;
           }
+        }
+
+        .form-control,
+        .date-picker-input,
+        select {
+          width: 100%;
+          height: 50px;
+          padding: 10px 15px;
+          border-radius: 50px;
+          border: 1px solid #ddd;
+          box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.8);
+          font-size: 16px;
+        }
+
+        select {
+          appearance: none;
+          background-color: white;
+        }
+
+        .date-picker-input {
+          text-align: center;
         }
       `}</style>
     </Container>

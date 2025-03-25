@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import featureIcon_1 from '../../assets/images/ship-one.jpg';
-import { FaWhatsapp, FaPhoneAlt, FaPaperPlane } from 'react-icons/fa';
+import { FaWhatsapp, FaPhoneAlt, FaSms } from 'react-icons/fa';
 import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'next/image';
 import { format, isTomorrow, isToday } from 'date-fns';
@@ -12,7 +11,7 @@ import car4 from '../../assets/car13.jpg';
 import car5 from '../../assets/car14.jpg';
 import car6 from '../../assets/car15.jpg';
 import car7 from '../../assets/car16.jpg';
-import car8 from '../../assets/car18.jpeg';
+import car8 from '../../assets/car18.jpg';
 import car9 from '../../assets/car17.jpg';
 import { Modal } from 'react-bootstrap';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -29,7 +28,7 @@ const properties = [
     title: 'Innova Crysta',
     address: '6+1 Seater, Agra',
     image: yatch_seven,
-    features: [{ label: 'Our Promise', icon: featureIcon_1 }],
+    features: [{ label: 'Our Promise' }],
     images: [
       { src: '/img/car1/car01.jpg' },
       { src: '/img/car1/car02.jpeg' },
@@ -58,7 +57,7 @@ const properties = [
     title: 'Kia Carens',
     address: '6+1 Seater, Agra',
     image: car2,
-    features: [{ label: 'Our Promise', icon: featureIcon_1 }],
+    features: [{ label: 'Our Promise' }],
     images: [
       { src: '/img/car2/car01.jpg' },
       { src: '/img/car2/car02.jpeg' },
@@ -88,7 +87,7 @@ const properties = [
     title: 'Ertiga',
     address: '6+1 Seater, Agra',
     image: car3,
-    features: [{ label: 'Our Promise', icon: featureIcon_1 }],
+    features: [{ label: 'Our Promise' }],
     images: [
       { src: '/img/car3/car01.jpg' },
       { src: '/img/car3/car02.jpeg' },
@@ -118,7 +117,7 @@ const properties = [
     title: 'Honda Amaze',
     address: '4+1 Seater, Agra',
     image: car4,
-    features: [{ label: 'Our Promise', icon: featureIcon_1 }],
+    features: [{ label: 'Our Promise' }],
     images: [
       { src: '/img/car4/car01.jpg' },
       { src: '/img/car4/car02.jpeg' },
@@ -148,7 +147,7 @@ const properties = [
     title: 'Maruthi Ciaz',
     address: '4+1 Seater, Agra',
     image: car5,
-    features: [{ label: 'Our Promise', icon: featureIcon_1 }],
+    features: [{ label: 'Our Promise' }],
     images: [
       { src: '/img/car5/car01.jpg' },
       { src: '/img/car5/car02.jpeg' },
@@ -177,7 +176,7 @@ const properties = [
     title: 'Swift Dzire',
     address: '4+1 Seater, Agra',
     image: car6,
-    features: [{ label: 'Our Promise', icon: featureIcon_1 }],
+    features: [{ label: 'Our Promise' }],
     images: [
       { src: '/img/car6/car01.jpg' },
       { src: '/img/car6/car02.jpeg' },
@@ -207,7 +206,7 @@ const properties = [
     title: 'Hyundai Aura',
     address: '4+1 Seater, Agra',
     image: car7,
-    features: [{ label: 'Our Promise', icon: featureIcon_1 }],
+    features: [{ label: 'Our Promise' }],
     images: [
       { src: '/img/car7/car01.jpg' },
       { src: '/img/car7/car02.jpeg' },
@@ -237,9 +236,9 @@ const properties = [
     title: 'Toyota Glanza',
     address: '4+1 Seater, Agra',
     image: car8,
-    features: [{ label: 'Our Promise', icon: featureIcon_1 }],
+    features: [{ label: 'Our Promise' }],
     images: [
-      { src: '/img/car8/car01.jpeg' },
+      { src: '/img/car8/car01.jpg' },
       { src: '/img/car8/car02.jpeg' },
       { src: '/img/car8/car03.jpeg' },
       { src: '/img/car8/car04.jpeg' },
@@ -266,7 +265,7 @@ const properties = [
     title: 'Toyota Platinum Etios',
     address: '4+1 Seater, Agra',
     image: car9,
-    features: [{ label: 'Our Promise', icon: featureIcon_1 }],
+    features: [{ label: 'Our Promise' }],
     images: [
       { src: '/img/car9/car01.jpg' },
       { src: '/img/car9/car02.jpeg' },
@@ -381,7 +380,6 @@ Hello! I am interested in booking the car%0A%0A
 %F0%9F%9B%A5%EF%B8%8F Car Name: ${yacht.title}%0A
 %F0%9F%95%91%20 Time:%20${startTime}%0A
 %F0%9F%93%85%20 Date:%20${formattedSelectedDate}%0A
-%F0%9F%91%AA%20 Seats: %0A
 
 %E2%9C%A8 Looking forward to connecting with you!`;
 
@@ -392,38 +390,23 @@ Hello! I am interested in booking the car%0A%0A
   const handleBookNowTelegram = (yacht) => {
     const startTime = convertMinutesToTime(timeRange[0]);
     const formattedSelectedDate = format(selectedDate, 'dd MMM yyyy');
-    const emailSubject = encodeURIComponent(
-      `Booking Inquiry for ${yacht.title}`
-    );
-    const message = `Hello! I am interested in booking the cars%0A%0A
-%F0%9F%93%85 Booking Details:%0A%0A
-%F0%9F%9B%A5%EF%B8%8F Yacht Name: ${yacht.title} ${yacht.length}%0A
-%F0%9F%95%91%20 Time:%20${startTime}%0A
-%F0%9F%93%85%20 Date:%20${formattedSelectedDate}%0A
-%F0%9F%91%AA%20 No.%20of%20Guests:  %0A
-
-%E2%9C%A8 Looking forward to connecting with you!`;
-
-    const emailRecipient = 'example@example.com'; // Replace with your recipient's email address
-    const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailRecipient}&su=${emailSubject}&body=${message}`;
-    window.open(gmailURL, '_blank');
-  };
-
-  const handleBookNowPhone = (yacht) => {
-    const startTime = convertMinutesToTime(timeRange[0]);
-    const formattedSelectedDate = format(selectedDate, 'dd MMM yyyy');
-    const message = `Hello! I am interested in booking the cars%0A%0A
-%F0%9F%93%85 Booking Details:%0A%0A
-%F0%9F%9B%A5%EF%B8%8F Yacht Name: ${yacht.title} ${yacht.length}%0A
-%F0%9F%95%91%20 Time:%20${startTime}%0A
-%F0%9F%93%85%20 Date:%20${formattedSelectedDate}%0A
-%F0%9F%91%AA%20 No.%20of%20Guests:
-
-%E2%9C%A8 Looking forward to connecting with you!`;
+    const message = `Hello! I am interested in booking the car.
+📅 Booking Details:
+🛥️ Car Name: ${yacht.title} ${yacht.length}
+⏱️ Time: ${startTime}
+📅 Date: ${formattedSelectedDate}
+✨ Looking forward to connecting with you!`;
 
     const phoneURL = `sms:+919410888861?body=${encodeURIComponent(message)}`;
     window.open(phoneURL, '_blank');
   };
+
+  const handleBookNowPhone = (yacht) => {
+    const phoneNumber = '+919410888861'; // Replace with the actual contact number
+    const phoneURL = `tel:${phoneNumber}`;
+    window.open(phoneURL, '_self'); // '_self' ensures the call opens in the same tab
+  };
+
   const pageData = filteredProperties.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
@@ -623,7 +606,7 @@ Hello! I am interested in booking the car%0A%0A
                           className=' badge m-2'
                           onClick={() => handleBookNowTelegram(property)}
                         >
-                          <FaPaperPlane size={24} />
+                          <FaSms size={24} />
                         </div>
                       </div>
                     </div>

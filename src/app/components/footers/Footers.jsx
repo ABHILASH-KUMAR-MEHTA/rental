@@ -17,7 +17,7 @@ const Footers = () => {
   const [message, setMessage] = useState('');
 
   const handleSendToWhatsApp = () => {
-    const whatsappNumber = '+919760244011'; // ✅ Updated WhatsApp number
+    const whatsappNumber = '+919410888861'; // ✅ Updated WhatsApp number
     const whatsappMessage = `*Contact Inquiry:*\n\n📌 *Name:* ${name}\n📩 *Email:* ${email}\n📞 *Phone:* ${phone}\n📌 *Subject:* ${subject}\n📝 *Message:* ${message}`;
     const encodedMessage = encodeURIComponent(whatsappMessage);
 

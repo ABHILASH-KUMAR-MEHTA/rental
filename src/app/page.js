@@ -43,22 +43,22 @@ export default function Home() {
               ' "The car was extremely comfortable and spacious, which made our long journey between Agra, Delhi, and Jaipur enjoyable." ',
           },
           {
-            imageSrc: ['/img/test1.jpg', '/img/test4.jpg'],
-            titles: 'Avtansh Chahar (Influencer)',
+            imageSrc: ['/img/test7.jpg'],
+            titles: 'Laxman Singh Dhoni',
             title:
-              ' "I had an amazing experience with Gangaram Tour & Travels. I would highly recommend them to anyone looking for a hassle-free and memorable trip." ',
+              ' "Gangaram Tour And Travels ensured a stress-free airport transfer. The cab arrived promptly, the journey was comfortable, and the service was excellent. Highly recommended!" " ',
           },
           {
-            imageSrc: ['/img/test2.jpg', '/img/test5.jpg'],
-            titles: 'Bindas Kavya (Youtuber)',
+            imageSrc: ['/img/test8.jpg'],
+            titles: 'Abhishek Parasar',
             title:
-              ' "The car was spotless, well-maintained, and very comfortable. It made my journey to the airport stress-free and pleasant." ',
+              ' "I had a fantastic sightseeing experience with Gangaram Tour And Travels in Agra. The taxi was punctual, making the trip smooth and hassle-free. Highly recommend for a reliable travel service!" ',
           },
           {
-            imageSrc: ['/img/test3.jpg'],
-            titles: 'MiguelDias (Singer)',
+            imageSrc: ['/img/test9.jpg'],
+            titles: 'Marci fonseca',
             title:
-              ' "The car was extremely comfortable and spacious, which made our long journey between Agra, Delhi, and Jaipur enjoyable." ',
+              ' "On my way to the Taj Mahal, I got stuck in traffic for over an hour searching for a cab. I decided to rent a car and found Gangaram Tour and Travels Online. Their pricing was the best, and the service was seamless. It made my journey so much easier!" ',
           },
         ]}
       />

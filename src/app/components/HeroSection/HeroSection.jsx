@@ -41,12 +41,12 @@ export const HeroSection = () => {
         ref={textRef}
       >
         <h1>
-          Rides Made Affordable! <span>Anytime</span> & <span>Anywhere</span>
+          The taxi service you can<span> trust</span> in <span>Agra</span>
         </h1>
         <p>
-          Rent the perfect car for any trip with GangaRam. Enjoy flexible
-          options, great prices, and a hassle-free experience. Get started in a
-          few clicks!
+          Our taxi services are perfect for a smooth and comfortable journey,
+          with experienced drivers and well-maintained cars. Travel with ease
+          and comfort with Gangaram Tour & Travels!
         </p>
 
         <div className='app-links'>
