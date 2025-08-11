@@ -262,7 +262,7 @@ const properties = [
   },
   {
     id: 9,
-    title: 'Toyota Platinum Etios',
+    title: 'Toyota Etios',
     address: '4+1 Seater, Agra',
     image: car9,
     features: [{ label: 'Our Promise' }],

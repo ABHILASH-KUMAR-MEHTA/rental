@@ -74,7 +74,7 @@ export const Navbar = () => {
               <Image
                 src={Logo}
                 alt='Logo'
-                style={{ width: '120px', height: '30px' }}
+                style={{ width: '150px', height: '40px' }}
               />
             </a>
           </div>

@@ -53,6 +53,7 @@ a {
   font-size: 1.1rem;
   position: relative;
   display: inline-block;
+  font-weight: bold;
 }
 
 /* Underline Animation for Links */
@@ -73,6 +74,7 @@ a {
 /* Auth Buttons Styles Start */
 .auth-buttons {
   display: none;
+  font-weight: bold;
 }
 .btn {
   padding: 6px 12px;
